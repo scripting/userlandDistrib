@@ -51,7 +51,7 @@ bundle //convert homepages to weblog items
          msg (s)
       s = string.replaceAll (s, "\\\"", "\"") //we don't have to worry about escaping quotes -- we're not in the wsf
       s = string.replaceAll (s, "\r\n", "\r")
-      s = string.replaceAll (s, "\r\r", "<br><br>")
+      s = string.replaceAll (s, "\r\r", "&lt;br>&lt;br>")
       myUserLandSuite.blog.post (s, adrBlog, d)
    on getMessageDate (msgNum)
       local (adrMessages = @adrManilaSite^.["#discussionGroup"].messages)
@@ -88,10 +88,10 @@ bundle //convert homepages to weblog items
             sizePattern = sizeOf (pattern)
             ix = string.patternMatch (pattern, s)
             return (ix > 0)
-         //if not (tryPattern ("<li>"))
+         //if not (tryPattern ("&lt;li>"))
          if not (tryPattern ("\r\r"))
             //if not tryPattern ("\r")
-            tryPattern ("<br><br>\r")
+            tryPattern ("&lt;br>&lt;br>\r")
          if ix == 0
             lineString = s
             s = ""
@@ -101,15 +101,15 @@ bundle //convert homepages to weblog items
             lineString = string.trimWhiteSpace (lineString)
             //case string.lower (lineString) //skip lines with only common markup
                //""
-               //"<br>"
-               //"<p>"
-               //"</p>"
-               //"<ul>"
-               //"</ul>"
-               //"<li>"
-               //"</li>"
-               //"<blockquote>"
-               //"</blockquote>"
+               //"&lt;br>"
+               //"&lt;p>"
+               //"&lt;/p>"
+               //"&lt;ul>"
+               //"&lt;/ul>"
+               //"&lt;li>"
+               //"&lt;/li>"
+               //"&lt;blockquote>"
+               //"&lt;/blockquote>"
                   //continue
          post (lineString, d)
    on convertOutline (theOutline, d)
@@ -118,7 +118,7 @@ bundle //convert homepages to weblog items
       else //post the outline as a single story rendered with the pikeRenderer
          local (s)
          local (pageTable, oldPta); new (tableType, @pageTable)
-         try {oldPta = html.getPageTableAddress ()}
+         try &#123;oldPta = html.getPageTableAddress ()}
          html.setPageTableAddress (@pageTable)
          s = pikeRenderer (@theOutline)
          html.deletePageTableAddress ()

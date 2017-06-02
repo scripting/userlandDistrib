@@ -1,28 +1,28 @@
 ### workspace.userlandSamples.genMonthlyArchives.rules
 <pre>
-<rules>
-   <rule>
-      <font-family>Georgia</font-family>
-      <font-size>18px</font-size>
-      <line-height>140%</line-height>
-      <expanded>true</expanded>
-      <no-icons>true</no-icons>
-      <outline-indent>0</outline-indent>
-      <outline-space>10px</outline-space>
-      <permalink>false</permalink>
-      </rule>
-   <rule level="3" to="infinity">
-      <outline-indent>30px</outline-indent>
-      </rule>
-   <rule level="1" to="1">
-      <font-size>24px</font-size>
-      <font-weight>bold</font-weight>
-      <permalink>true</permalink>
-      <list-space>50px</list-space>
-      </rule>
-   <rule level="2" to="2">
-      <list-space>35px</list-space>
-      </rule>
-   </rules>
+&lt;rules>
+   &lt;rule>
+      &lt;font-family>Georgia&lt;/font-family>
+      &lt;font-size>18px&lt;/font-size>
+      &lt;line-height>140%&lt;/line-height>
+      &lt;expanded>true&lt;/expanded>
+      &lt;no-icons>true&lt;/no-icons>
+      &lt;outline-indent>0&lt;/outline-indent>
+      &lt;outline-space>10px&lt;/outline-space>
+      &lt;permalink>false&lt;/permalink>
+      &lt;/rule>
+   &lt;rule level="3" to="infinity">
+      &lt;outline-indent>30px&lt;/outline-indent>
+      &lt;/rule>
+   &lt;rule level="1" to="1">
+      &lt;font-size>24px&lt;/font-size>
+      &lt;font-weight>bold&lt;/font-weight>
+      &lt;permalink>true&lt;/permalink>
+      &lt;list-space>50px&lt;/list-space>
+      &lt;/rule>
+   &lt;rule level="2" to="2">
+      &lt;list-space>35px&lt;/list-space>
+      &lt;/rule>
+   &lt;/rules>
 
 </pre>

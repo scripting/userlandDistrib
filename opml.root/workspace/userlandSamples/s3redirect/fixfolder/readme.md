@@ -13,7 +13,7 @@ on fixfolder ()
          new (tabletype, @t)
          t.url = string.lastfield (nameof (adrfile^), "/")
          path = string.delete (path, sizeof (path) - 4, 5)
-         s = string.multiplereplaceall (string (workspace.userlandsamples.s3redirect.template), @t, false, "<%", "%>")
+         s = string.multiplereplaceall (string (workspace.userlandsamples.s3redirect.template), @t, false, "&lt;%", "%>")
          s3.newobject (path, s, type:"text/html")
 bundle //test code
    fixfolder ()

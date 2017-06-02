@@ -1,7 +1,7 @@
 ### workspace.userlandSamples.rpcInteropTests.clientScripts.echoStructArray
 <pre>
 on echoStructArray (server, port, protocol)
-   local (aStructArray = {})
+   local (aStructArray = &#123;})
    bundle //generate the array
       local (i)
       for i = 1 to 3
@@ -21,7 +21,7 @@ on echoStructArray (server, port, protocol)
          
          aStructArray[0] = aStruct
    
-   local (result, params = {"inputStructArray":aStructArray})
+   local (result, params = &#123;"inputStructArray":aStructArray})
    case protocol
       "xml-rpc"
          result = xml.rpc (server, port, "interopEchoTests.echoStructArray", @params, protocol:protocol, soapAction:"/interopEchoTests")

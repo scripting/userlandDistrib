@@ -4,7 +4,7 @@ on echoString (server, port, protocol)
    local (n = random (1, 50))
    local (aString = states.nthState (n))
    
-   local (result, params = {"inputString":aString})
+   local (result, params = &#123;"inputString":aString})
    result = xml.rpc (server, port, "interopEchoTests.echoString", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    if result != aString

@@ -20,7 +20,7 @@ on newPost (username, password, blogId, text, flPublish=true, adrdata=@workspace
             //http://groups.yahoo.com/group/bloggerDev
    
    with adrdata^
-      local (params = {appkey, string (blogId), username, password, text, flPublish})
+      local (params = &#123;appkey, string (blogId), username, password, text, flPublish})
       return (xml.rpc (server, port, "blogger.newPost", @params, rpcPath:rpcPath, protocol:protocol))
 
 bundle //testing

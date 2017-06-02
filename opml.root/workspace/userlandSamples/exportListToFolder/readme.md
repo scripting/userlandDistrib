@@ -14,7 +14,7 @@ on exportListToFolder ()
       if adrParent != nil
          if (not table.inguestdatabase (adr)) or (adrparent != table.getrootaddress (adr))
             local (dottedname = nameOf (adrParent^) + '.' + s)
-            if (sizeof (dottedname) + sizeof (suffix) + 1) < 32
+            if (sizeof (dottedname) + sizeof (suffix) + 1) &lt; 32
                s = dottedname
       local (f = folder + s + suffix)
       file.surefilepath (f)

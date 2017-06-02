@@ -1,11 +1,11 @@
 ### workspace.userlandSamples.s3redirect.template
 <pre>
-<html>
-   <head>
-      <meta http-equiv="refresh" content="0;URL='<%url%>'">
-      </head>
-   <body>
-      </body>
-   </html>
+&lt;html>
+   &lt;head>
+      &lt;meta http-equiv="refresh" content="0;URL='<%url%>'">
+      &lt;/head>
+   &lt;body>
+      &lt;/body>
+   &lt;/html>
 
 </pre>

@@ -7,7 +7,7 @@ on floatNearlyEqual (a, b)
    if a == b
       return (true)
    local (epsilon = 0.0000001)
-   local (nearlyEqual = abs (a - b) <= (abs (a) * epsilon))
+   local (nearlyEqual = abs (a - b) &lt;= (abs (a) * epsilon))
    return (nearlyEqual)
 
 </pre>

@@ -15,7 +15,7 @@ on echoStruct (server, port, protocol)
    aStruct.varInt = anInteger
    aStruct.varString = aString
    
-   local (result, params = {"inputStruct":aStruct})
+   local (result, params = &#123;"inputStruct":aStruct})
    result = xml.rpc (server, port, "interopEchoTests.echoStruct", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    bundle //test return value

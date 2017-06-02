@@ -7,7 +7,7 @@ on test ()
    local (adrtable = @scratchpad.idscripts)
    new (tabletype, adrtable)
    for i = 1 to 10
-      adrtable^.[thread.callscript (@workspace.userlandSamples.threads.runForTenSecs, {})] = 0
+      adrtable^.[thread.callscript (@workspace.userlandSamples.threads.runForTenSecs, &#123;})] = 0
    edit (adrtable)
    window.zoom (adrtable)
 bundle //test code

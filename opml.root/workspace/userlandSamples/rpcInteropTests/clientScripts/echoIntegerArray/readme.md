@@ -1,14 +1,14 @@
 ### workspace.userlandSamples.rpcInteropTests.clientScripts.echoIntegerArray
 <pre>
 on echoIntegerArray (server, port, protocol)
-   local (anIntegerArray = {})
+   local (anIntegerArray = &#123;})
    bundle //generate the array
       local (i)
       for i = 1 to 3
          local (anInteger = random (-5000, 5000))
          anIntegerArray = anIntegerArray + anInteger
    
-   local (result, params = {"inputIntegerArray":anIntegerArray})
+   local (result, params = &#123;"inputIntegerArray":anIntegerArray})
    result = xml.rpc (server, port, "interopEchoTests.echoIntegerArray", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    if typeOf (result) != listType

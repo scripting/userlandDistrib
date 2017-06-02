@@ -7,7 +7,7 @@ on pullMacrosFromOutline (s)
    local (adroutline = @scratchpad.macros, macros, oldtarget)
    new (tabletype, @macros)
    loop
-      local (ix = string.patternmatch ("<%", s), macro)
+      local (ix = string.patternmatch ("&lt;%", s), macro)
       if ix == 0
          break
       s = string.delete (s, 1, ix-1)

@@ -14,7 +14,7 @@ on genOneMonthArchive (adrmonth)
       try
          created = date (adr^.["/atts"].created)
          adrsub = xml.addtable (adr, "outline")
-         xml.addattribute (adrsub, "text", "<span class=\"whenPosted\">Posted: " + string (created) + ".</span>")
+         xml.addattribute (adrsub, "text", "&lt;span class=\"whenPosted\">Posted: " + string (created) + ".&lt;/span>")
    workspace.userlandSamples.genMonthlyArchives.struct = xshell
    t.outlinetext = op.render.viewoutline ("", adrparent:adrshellbody, adrInitialRulesText: @rulestext)
    t.systemStyles = webApp.viewHeadIncludes (flBootstrap2:true)

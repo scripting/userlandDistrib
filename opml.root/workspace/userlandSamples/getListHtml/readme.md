@@ -8,14 +8,14 @@ local (htmltext = "", indentlevel = 0, domain)
 on add (s)
    htmltext = htmltext + string.filledstring ("\t", indentlevel) + s + "\r"
 op.go (up, infinity)
-add ("<ol>"); indentlevel++
+add ("&lt;ol>"); indentlevel++
 loop
    domain = op.getlinetext ()
-   add ("<li><a href=\"http://" + domain + "/\">" + domain + "</a></li><br>")
+   add ("&lt;li>&lt;a href=\"http://" + domain + "/\">" + domain + "&lt;/a>&lt;/li>&lt;br>")
    if not op.go (down, 1)
       op.go (up, infinity)
       break
-add ("</ol>"); indentlevel--
+add ("&lt;/ol>"); indentlevel--
 webbrowser.displaytext (htmltext)
 
 </pre>

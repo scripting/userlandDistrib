@@ -4,7 +4,7 @@ on convert ()
    //Changes
       //8/8/13; 11:54:42 AM by DW
          //Created.
-   local (adrinput = @workspace.userlandSamples.convertLinks.inputOutline, linkbegin = "<a href=\"", ix, url)
+   local (adrinput = @workspace.userlandSamples.convertLinks.inputOutline, linkbegin = "&lt;a href=\"", ix, url)
    local (adroutput = @workspace.userlandSamples.convertLinks.outputOutline)
    adroutput^ = adrinput^
    target.set (adroutput)

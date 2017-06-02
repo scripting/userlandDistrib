@@ -19,7 +19,7 @@ on exportConfigTables ()
       if adrparent != nil
          if (not table.inguestdatabase (adr)) or (adrparent != table.getrootaddress (adr))
             local (dottedname = nameOf (adrParent^) + '.' + fname)
-            if (sizeof (dottedname) + sizeof (suffix) + 1) < 32
+            if (sizeof (dottedname) + sizeof (suffix) + 1) &lt; 32
                fname = dottedname
       local (f = folder + "config" + pc + fname + "." + suffix)
       file.surefilepath (f)

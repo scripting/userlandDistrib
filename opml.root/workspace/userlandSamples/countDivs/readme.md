@@ -16,8 +16,8 @@ on countDivs ()
             return (ct)
          ct++
          s = string.delete (s, 1, ix)
-   dialog.alert (count ("<div"))
-   dialog.alert (count ("</div"))
+   dialog.alert (count ("&lt;div"))
+   dialog.alert (count ("&lt;/div"))
 bundle //test code
    countDivs ()
 

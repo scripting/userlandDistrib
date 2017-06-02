@@ -10,7 +10,7 @@ on countTheEntities (s)
    struct.ctQuotes = 0
    for i = 1 to sizeof (s)
       case s [i]
-         '<'
+         '&lt;'
             struct.ctLeftAngleBrackets++
          '>'
             struct.ctRightAngleBrackets++
@@ -31,7 +31,7 @@ bundle //test code
          local (ct = random (2, 10))
          for i = 1 to ct
             s [random (1, sizeof (s))] = ch
-      addentity ('<')
+      addentity ('&lt;')
       addentity ('>')
       addentity ('&')
       addentity ('\'')
