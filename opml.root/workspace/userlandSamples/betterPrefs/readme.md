@@ -1,4 +1,6 @@
-<pre>on betterPrefs ()
+### workspace.userlandSamples.betterPrefs
+<pre>
+on betterPrefs ()
    //Changes
       //9/16/10; 11:24:59 AM by DW
          //Add some bits that make it so that mainresponder.respond handles all the requests that used to go through the websiteframework responder.
@@ -21,4 +23,5 @@
       config.mainresponder.domains.default = @user.webserver.responders.websiteFramework.data.doctree
 bundle //test code
    betterPrefs ()
+
 </pre>
