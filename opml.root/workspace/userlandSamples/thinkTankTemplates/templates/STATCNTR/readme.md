@@ -1,0 +1,96 @@
+### workspace.userlandSamples.thinkTankTemplates.templates.STATCNTR
+<pre>
+Personal Status Center Template
+   Address book
+    ab
+    cd
+    ef
+    gh
+    ij
+    kl
+    mn
+    op
+    qr
+    st
+    uv
+    wx
+    yz
+   Appointments
+    Monday
+       08:00am: 
+       09:00am: 
+       10:00am: 
+       11:00am: 
+       12:00pm: 
+       01:00pm: 
+       02:00pm: 
+       03:00pm: 
+       04:00pm: 
+       05:00pm: 
+       06:00pm: 
+       07:00pm: 
+       08:00pm: 
+    Tuesday
+       08:00am: 
+       09:00am: 
+       10:00am: 
+       11:00am: 
+       12:00pm: 
+       01:00pm: 
+       02:00pm: 
+       03:00pm: 
+       04:00pm: 
+       05:00pm: 
+       06:00pm: 
+       07:00pm: 
+       08:00pm: 
+    Wednesday
+       08:00am: 
+       09:00am: 
+       10:00am: 
+       11:00am: 
+       12:00pm: 
+       01:00pm: 
+       02:00pm: 
+       03:00pm: 
+       04:00pm: 
+       05:00pm: 
+       06:00pm: 
+       07:00pm: 
+       08:00pm: 
+    Thursday
+       08:00am: 
+       09:00am: 
+       10:00am: 
+       11:00am: 
+       12:00pm: 
+       01:00pm: 
+       02:00pm: 
+       03:00pm: 
+       04:00pm: 
+       05:00pm: 
+       06:00pm: 
+       07:00pm: 
+       08:00pm: 
+    Friday
+       08:00am: 
+       09:00am: 
+       10:00am: 
+       11:00am: 
+       12:00pm: 
+       01:00pm: 
+       02:00pm: 
+       03:00pm: 
+       04:00pm: 
+       05:00pm: 
+       06:00pm: 
+       07:00pm: 
+       08:00pm: 
+   Notes & Memos
+   Miscellaneous
+   Projects
+   To Do List
+    Long term
+    Short term 
+
+</pre>
