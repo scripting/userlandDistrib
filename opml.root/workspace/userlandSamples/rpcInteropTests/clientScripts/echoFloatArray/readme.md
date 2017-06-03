@@ -1,7 +1,7 @@
 ### workspace.userlandSamples.rpcInteropTests.clientScripts.echoFloatArray
 <pre>
 on echoFloatArray (server, port, protocol)
-   local (aFloatArray = &#123;})
+   local (aFloatArray = {})
    bundle //generate the array
       local (i)
       for i = 1 to 3
@@ -10,7 +10,7 @@ on echoFloatArray (server, port, protocol)
          local (aFloat = double (numerator) / denominator)
          aFloatArray = aFloatArray + aFloat
    
-   local (result, params = &#123;"inputFloatArray":aFloatArray})
+   local (result, params = {"inputFloatArray":aFloatArray})
    result = xml.rpc (server, port, "interopEchoTests.echoFloatArray", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    if typeOf (result) != listType

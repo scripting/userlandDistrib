@@ -2,7 +2,7 @@
 <pre>
 Product Development Plan Template
    Objective
-1.  Establish a case to invest significantly in R&D and Manufacturing to 
+1.  Establish a case to invest significantly in R&amp;D and Manufacturing to 
 develop and prepare to manufacture a new product.	
    
 2.  Demonstrate the business case for the new product. 
@@ -63,6 +63,6 @@ develop and prepare to manufacture a new product.
    Financial Analysis
     Pricing and Cost Models
     Impact on Current Products
-    Abbreviated Product Profit & Loss
+    Abbreviated Product Profit &amp; Loss
 
 </pre>

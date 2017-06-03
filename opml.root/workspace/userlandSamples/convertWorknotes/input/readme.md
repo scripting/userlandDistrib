@@ -11,9 +11,9 @@ Small Picture worknotes
             Now it's a bit simpler. 
                1. Get the URL of your image on the clipboard. If you don't have one handy, use &lt;a href="http://static.scripting.com/larryKing/images/2013/07/25/phone.gif">this&lt;/a> one. 
                2. In Fargo, put the bar cursor on the headline that you want to attach the image to. The image will appear in the right margin of the post at the start of this headline. 
-                  <i>Note: The img attribute must appear on a line within the post, not on the title headline of the post.</i>
+                  &lt;i>Note: The img attribute must appear on a line within the post, not on the title headline of the post.&lt;/i>
                3. Click on the suitcase icon in the left margin. 
-               4. Add a new attribute by clicking the + button. It's name is <i>img,</i> the value is the URL you have on the clipboard.
+               4. Add a new attribute by clicking the + button. It's name is &lt;i>img,&lt;/i> the value is the URL you have on the clipboard.
                5. Click OK.
             When you view the outline in a web page, the image will appear in the right margin. It will also appear in the RSS feed. 
          New settings, RSS features
@@ -35,7 +35,7 @@ Small Picture worknotes
          New command in Outliner menu
             A new Outliner menu command toggles between Render and Non-render mode. The single keystroke is Cmd-`.
             In render mode HTML entities are seen as they would be seen in a web page rendering of the content. This is possible because Fargo runs in the browser, which of course, naturally renders things as HTML. 
-            In non-render mode, the entities appear unrendered. So in image would show up in non-render mode as an &lt;img> tag. 
+            In non-render mode, the entities appear unrendered. So in image would show up in non-render mode as an &amp;lt;img> tag. 
             This command worked in earlier versions of Fargo and Little Outliner, but it wasn't present in a menu, so was harder to discover. 
             A &lt;a href="http://static.scripting.com/larryKing/images/2013/07/28/renderMode.gif">screen shot&lt;/a> of an outline in render mode, and a &lt;a href="http://static.scripting.com/larryKing/images/2013/07/28/nonRenderMode.gif">screen shot&lt;/a> of the same outline in non-render mode.
          File menu changes
@@ -45,14 +45,14 @@ Small Picture worknotes
             The reason for removing them is that there are now better ways to read content created in Fargo, using the web content management system. Having these commands in the menus were confusing for some users.
             See: &lt;a href="http://scripting.smallpict.com/2013/07/24/introToFargoScripting">Intro to Fargo Scripting&lt;/a>.
       Fargo 0.94
-         In previous versions, if you had a page with <i>type</i> or <i>method</i> equal to markdown, it would render fine on the website, but its markdown nature would be ignored by the feed generator. That's now fixed.
-         &lt;a href="http://dave.smallpict.com/2013/07/22/fargo094MarkdownInFeeds">This post&lt;/a>, as an example, has a <i>method</i> attribute of markdown, and it should appear with proper markup in the &lt;a href="http://dave.smallpict.com/rss.xml">feed&lt;/a>.
+         In previous versions, if you had a page with &lt;i>type&lt;/i> or &lt;i>method&lt;/i> equal to markdown, it would render fine on the website, but its markdown nature would be ignored by the feed generator. That's now fixed.
+         &lt;a href="http://dave.smallpict.com/2013/07/22/fargo094MarkdownInFeeds">This post&lt;/a>, as an example, has a &lt;i>method&lt;/i> attribute of markdown, and it should appear with proper markup in the &lt;a href="http://dave.smallpict.com/rss.xml">feed&lt;/a>.
       Fargo 0.93
          Before this release, the + icon required that the calendar be at the top level of the outline. Now, the calendar can be anywhere in the outline.
          Not a whole lot more to say about it. ;-)
       Fargo 0.92
          One small feature, a nice thing to have, not crucial.
-         If you put an <i>insertedNodeType</i> attribute on your calendar, then when you click the + in Fargo, that type will override the type you set in the Insert settings panel.
+         If you put an &lt;i>insertedNodeType&lt;/i> attribute on your calendar, then when you click the + in Fargo, that type will override the type you set in the Insert settings panel.
          You could also put the attribute on a month or a day. But it probably makes the most sense to put it on the year. You will have to remember to copy it to 2014 at the beginning of the next year. 
          This allows you to maintain several blogs which may not want to use the same type for posts.
          &lt;a href="http://static.scripting.com/larryKing/images/2013/07/14/insertedNodeType.gif">Screen shot&lt;/a>.
@@ -69,7 +69,7 @@ Small Picture worknotes
                1. Click + to create a new post.
                2. Edit your post until you're happy with it.
                3. Put the cursor on the top head in the post.
-               4. Choose <i>Toggle Comment </i>in the Outline menu.
+               4. Choose &lt;i>Toggle Comment &lt;/i>in the Outline menu.
                When the outline is next saved the new item will then appear on the site, and will be included in the RSS feed. 
             &lt;a href="http://static.scripting.com/larryKing/images/2013/07/12/newSetting.gif">Screen shot&lt;/a>.
          Redundant setting
@@ -81,7 +81,7 @@ Small Picture worknotes
          2. Upload it to the normal place. Copy the URL to the clipboard.
          3. Create a &lt;a href="http://dave.smallpict.com/2013/06/29/howToWriteABlogPostWithFargo">new post&lt;/a>.
          4. Put the cursor on the top headline, click the suitcase icon in the left margin.
-         5. Add a new attribute called <i>enclosure,</i> its value is the URL on the clipboard.
+         5. Add a new attribute called &lt;i>enclosure,&lt;/i> its value is the URL on the clipboard.
          6. Click Save.
          If the URL points to something that Fargo is able to access, it will add enclosureLength and enclosureType attributes to the headline, automatically, and will generate an enclosure element on the RSS feed item. All of this will happen without you having to do anything.
          Here's a &lt;a href="http://static.scripting.com/larryKing/images/2013/07/02/atts.gif">screen shot&lt;/a> of the attributes on my test podcast &lt;a href="http://dave.smallpict.com/2013/07/02/howPodcastsWorkInFargo">post&lt;/a>. 
@@ -102,7 +102,7 @@ Small Picture worknotes
             The text of the description element in each item was double-encoded, so when you viewed it in a feed reader, you'd see the markup instead of the effects of the markup. 
          Excessive saving bug
             In certain circumstances Fargo would save an outline on each change as many as 20 times. You would experience this as a sluggishness in the Save button in the right margin. Dropbox would experience an excessive amount of traffic for each save. 
-            The problem was that we were setting the &lt;link> element in the OPML &lt;head> section every time we saved the RSS. This would mark the outline as changed, which would force another save, marking the outline dirty, and around the loop we go. Since the saving happens asynchronously, eventually there would be a moment when the outline was not changed and it would stop the cascade. Now that it's fixed you get one save per change, and one build of the RSS feed. Whew! :-)
+            The problem was that we were setting the &amp;lt;link> element in the OPML &amp;lt;head> section every time we saved the RSS. This would mark the outline as changed, which would force another save, marking the outline dirty, and around the loop we go. Since the saving happens asynchronously, eventually there would be a moment when the outline was not changed and it would stop the cascade. Now that it's fixed you get one save per change, and one build of the RSS feed. Whew! :-)
          The contents of the right sidebar is fixed
             It doesn't scroll as you navigate down through the outline. 
             This is as it always should have been. 
@@ -111,21 +111,21 @@ Small Picture worknotes
          We learned a lot from the experience with the community feed, but now it's time to complete the transition, so we removed the icon for the community feed in this release, and updated the Fargo docs accordingly.
          Also, there's a &lt;a href="http://dave.smallpict.com/2013/06/28/howToCreateAPresentationInFargo">new howto&lt;/a> that shows how to create a presentation with Fargo.
       Fargo 0.84
-         The <i>name</i> attribute gives us a canonical way to refer to a headline that doesn't vary with its text. Prior to version 0.84 Fargo wasn't generating them, now it is.
+         The &lt;i>name&lt;/i> attribute gives us a canonical way to refer to a headline that doesn't vary with its text. Prior to version 0.84 Fargo wasn't generating them, now it is.
          When you click on the Eye icon in the left margin, we take the text of the headline, remove blanks and some special characters and innerCase the text to form the name attribute.
          Net-net: Links won't break if you change the text of a headline. 
       Fargo 0.82 loves RSS more
-         Jeffrey Kishner &lt;a href="https://groups.google.com/d/msg/smallpicture-web/Qg8ondVA60g/dyv07_v-xgoJ">points&lt;/a> out that &lt;rules> were being included in the RSS description element of Fargo's new feeds. That's not cool! Rules are meant to guide the rendering on Trex, but won't mean anything to a RSS aggregator. So in this release we take the rules out as we send the text out to RSS. 
+         Jeffrey Kishner &lt;a href="https://groups.google.com/d/msg/smallpicture-web/Qg8ondVA60g/dyv07_v-xgoJ">points&lt;/a> out that &amp;lt;rules> were being included in the RSS description element of Fargo's new feeds. That's not cool! Rules are meant to guide the rendering on Trex, but won't mean anything to a RSS aggregator. So in this release we take the rules out as we send the text out to RSS. 
          The hits keep coming! :-)
       Fargo 0.81 loves RSS
          You can now use &lt;a href="http://fargo.io/">Fargo&lt;/a> to post items to an RSS feed.
          Every outline has a feed, but the feed is only public for &lt;a href="http://dave.smallpict.com/2013/06/18/howToCreateANamedOutline">named&lt;/a> outlines.
-         The feeds are created in a new sub-folder of the Fargo folder called <i>rss.</i>
+         The feeds are created in a new sub-folder of the Fargo folder called &lt;i>rss.&lt;/i>
          You can access the feed through the named outline at /rss.xml. 
          For example, my feed is at &lt;a href="http://dave.smallpict.com/rss.xml">http://dave.smallpict.com/rss.xml&lt;/a>. 
          To add an item to the feed, &lt;a href="http://static.scripting.com/larryKing/images/2013/06/20/plusIcon.gif">click&lt;/a> the + icon in the left margin. The main headline is the title of the item. The subtext forms the RSS item description. 
-         If you don't want the + icon to create feed items, you can turn this feature off in the <i>Insert</i> panel of Settings. &lt;a href="http://static.scripting.com/larryKing/images/2013/06/20/insertPanelFargo.gif">Screen shot&lt;/a>.
-         You can cause any headline to be part of the feed by adding an <i>isFeedItem</i> attribute with the value true.
+         If you don't want the + icon to create feed items, you can turn this feature off in the &lt;i>Insert&lt;/i> panel of Settings. &lt;a href="http://static.scripting.com/larryKing/images/2013/06/20/insertPanelFargo.gif">Screen shot&lt;/a>.
+         You can cause any headline to be part of the feed by adding an &lt;i>isFeedItem&lt;/i> attribute with the value true.
          PS: My feed is &lt;a href="http://feedvalidator.org/check.cgi?url=http%3A%2F%2Fdave.smallpict.com%2Frss.xml">valid&lt;/a>. :-)
       Fix for missing eye icon
          Some people report named outlines for which the eye icon does not appear. We have a fix that works in some situations.
@@ -133,7 +133,7 @@ Small Picture worknotes
          The fix
             1. Open the outline in Fargo.
             2. Make it the current tab.
-            3. Choose <i>Name outline</i> in the File menu. 
+            3. Choose &lt;i>Name outline&lt;/i> in the File menu. 
             4. Enter the name of the outline. Ignore the message that says the name is taken.
             5. Click OK.
          What should happen
@@ -144,10 +144,10 @@ Small Picture worknotes
          &lt;rules (blogSectionsRules)>
          How to publish
             1. Open a &lt;a href="http://smallpicture.com/fargoDocs.html#names">named&lt;/a> outline. 
-            2. Create a new headline in that outline, something like <i>My first story.</i>
+            2. Create a new headline in that outline, something like &lt;i>My first story.&lt;/i>
             3. Write a paragraph or two indented beneath the headline. 
             4. Put the bar cursor on the top headline, and click the suitcase icon in the left margin to edit attributes.
-            5. Add a <i>type</i> attribute, with the value <i>outline.</i> Click OK.
+            5. Add a &lt;i>type&lt;/i> attribute, with the value &lt;i>outline.&lt;/i> Click OK.
             6. Click the eye icon in the left margin. 
             You should see a simple lovely page with your words on it!
          Viewing an outline
@@ -164,9 +164,9 @@ Small Picture worknotes
             7. Click the eye icon in the left margin. 
             Here's an example &lt;a href="http://helloworld.smallpict.com/example10">presentation&lt;/a>. This is what it &lt;a href="http://static.scripting.com/larryKing/images/2013/06/08/slideOutline.gif">looks like&lt;/a> as it's being edited in Fargo, and the &lt;a href="http://helloworld.smallpict.com/example10?format=opml">OPML&lt;/a> for the presentation.
          Profile change
-            The special headline with the text <i>profile</i> is still displayed when we display the top level of your website, but instead of using Reader to display the outline, we use the content management system.
+            The special headline with the text &lt;i>profile&lt;/i> is still displayed when we display the top level of your website, but instead of using Reader to display the outline, we use the content management system.
             For example, here's my &lt;a href="http://dave.smallpict.com/">profile&lt;/a> outline. 
-            Because the headline must be exactly <i>profile</i> in order for it to be recognized, you'll need a way to specify the text that's displayed in place of the headline text when the page is rendered. You can do this with a #text directive just below the headline. 
+            Because the headline must be exactly &lt;i>profile&lt;/i> in order for it to be recognized, you'll need a way to specify the text that's displayed in place of the headline text when the page is rendered. You can do this with a #text directive just below the headline. 
             Here's a &lt;a href="http://static.scripting.com/larryKing/images/2013/06/18/textDirective.gif">screen shot&lt;/a> that illustrates.
          Where we go from here
             We want to make a great environment where writers, designers and programmers work together. 
@@ -179,7 +179,7 @@ Small Picture worknotes
             Questions and comments are most welcome. 
       Fargo 0.78
          A few touch-ups for the + icon.
-         1. When we generate the top level headline for the year, instead of setting the <i>type</i> to calendar, we set the <i>icon</i> to calendar.
+         1. When we generate the top level headline for the year, instead of setting the &lt;i>type&lt;/i> to calendar, we set the &lt;i>icon&lt;/i> to calendar.
          2. If there's already a type of calendar on the year headline, we remove it. Any other type, we leave alone. 
          3. When creating a headline, the type goes on the headline we create, not on its parent. This way when we generate a web index for a calendar structure, the document boundary will be where users expect it. 
       Fargo 0.77
@@ -191,7 +191,7 @@ Small Picture worknotes
             If you don't choose one note per day, we create a new entry with the current time every time you click the + icon. This is the way it worked before version 0.77. 
             We added this option because we felt that for some people one note per day was enough. 
             You can also enter the name of a type that will be automatically assigned to each new item it creates. If you're in one-note-per-day mode, the type will be put on each day. Otherwise the type will be attatched to each time entry. 
-            The default value of this setting is <i>outline.</i> If you don't have a strong reason to change it, we recommend that you don't. 
+            The default value of this setting is &lt;i>outline.&lt;/i> If you don't have a strong reason to change it, we recommend that you don't. 
             This feature is here to connect with the new server software we're working on. :-)
       Fargo 0.75
          This release improves the big + icon at the top of the left sidebar.
@@ -200,7 +200,7 @@ Small Picture worknotes
          &lt;rules (blogSectionsRules)>
          What's new
             1. You can now place the calendar anywhere at the top level of your outline. It no longer has to be the first item, but it must be at the top level.
-            2. The first time you add an item to the calendar with 0.75, we'll add a type attribute to the year with the value <i>calendar,</i> but only if it doesn't already have a type. 
+            2. The first time you add an item to the calendar with 0.75, we'll add a type attribute to the year with the value &lt;i>calendar,&lt;/i> but only if it doesn't already have a type. 
             3. The icon for the calendar type is, of course, a calendar. ;-)
          How to try it out
             To try it out, if you have a calendar in one of your outlines, move it, and try adding an item. It should find the calendar in its new location.
@@ -210,10 +210,10 @@ Small Picture worknotes
          I was watching the game last night
             &lt;img src="http://static.scripting.com/larryKing/images/2013/06/02/clyde.gif" width="161" height="258" border="0" style="float: right; padding-left: 25px; padding-bottom: 10px; padding-top: 10px; padding-right: 15px;" alt="A picture named clyde.gif">There was an incredible &lt;a href="http://www.nytimes.com/2013/06/02/sports/basketball/heat-falter-fume-and-fall.html?pagewanted=all">basketball game&lt;/a> on last night. As you may know from reading Scripting News, I have been enthusiastically following  basketball all season, and now we're in the semi-finals, and the Indiana-Miami series has been incredible. Last night's game was probably the best game all season. 
             At the same time, the community feed is going through what I think of as growing pains. I've been developing community software for a long time, going back to the early 80s, and I've started lots of these things. Some of them grow up to be huge, like blogging and podcasting, and some don't. I learn a lot either way. But I don't need to learn things three or four times. Or more! One would hope. :-)
-            The community feed, as it was set up, is exactly the same as an unmoderated mail list or discussion group. The fact that we're all using an outliner to write for it doesn't matter. It goes in a predictable direction. There's a sense that this is the center of everything, the place where decisions are made, the authority of everything. It isn't that. But it <i>feels</i> that way. 
+            The community feed, as it was set up, is exactly the same as an unmoderated mail list or discussion group. The fact that we're all using an outliner to write for it doesn't matter. It goes in a predictable direction. There's a sense that this is the center of everything, the place where decisions are made, the authority of everything. It isn't that. But it &lt;i>feels&lt;/i> that way. 
             Over time that tends to push away the people we want to hear from most, the people who use our product but for their own work. They're not trying to do our work, which is to develop and enhance an outliner product, Fargo. But over time that's where these things tend to go. This community is growing very quickly, so the focus has shifted a lot sooner than I thought it would. I think to some extent, btw, that I am responsible for this rapid shift. My presence there serves as a lightning rod for people to give me feedback, and I even ask for it. I shouldn't, and I wll try not to in the future. I want to participate less, and get out of the way and let the users speak.
             Anyway, during the game, a couple of well-intentioned outlines were posted that said "Pay attention to me now or else!" But I didn't want to do that, because I was watching a game, and I needed some time to think about what to do next, and I honestly I had had a few beers by then, and the last thing I wanted to do is get involved in the community feed. So, this is what I did:
-               1. I set the <i>enabled</i> flag for the group to false.
+               1. I set the &lt;i>enabled&lt;/i> flag for the group to false.
                2. I went back to watching the game.
                3. I thought some more about where I want to go with this.
          The Community Feed is now moderated
@@ -237,7 +237,7 @@ Small Picture worknotes
          Be sure you're running 0.72.
       Tech feature -- startup code
          In Fargo 0.71 there's a new Settings panel called Code, with a place to enter JavaScript that runs when Fargo starts up. &lt;a href="http://static.scripting.com/larryKing/images/2013/05/29/codePanel.gif">Screen shot&lt;/a>.
-         Note of caution: If you're a programmer, be careful. If you're not a programmer, be much more careful. This is potentially a very powerful feature which means it is also potentially a very <i>dangerous</i> feature. 
+         Note of caution: If you're a programmer, be careful. If you're not a programmer, be much more careful. This is potentially a very powerful feature which means it is also potentially a very &lt;i>dangerous&lt;/i> feature. 
          Be sure you know what the code you're entering does, and that you trust the person who gave it to you. When in doubt, don't. 
          With that caveat... we look forward to seeing what people do with this feature. ;-)
       Fargo 0.71
@@ -256,7 +256,7 @@ Small Picture worknotes
          Save button hidden
             The Save button which was new in &lt;a href="http://worknotes.smallpicture.com/may2013/fargo065">Fargo 0.65&lt;/a> would be visible even when viewing read-only outlines. 
             Now it is only visible on outlines that you can edit.
-         Fix in <i>Set Name</i> command
+         Fix in &lt;i>Set Name&lt;/i> command
             If you try to set the name of a new outline that did not have a title, before we assign the name, we set the title to the name you chose.
             A few users set the name of the first outline they created in their first use of Fargo. When the outline got a title, we automatically change the name of the file from untitled.opml to title.opml. This would break their named outline.
       Tech feature -- cssTextClass
@@ -264,7 +264,7 @@ Small Picture worknotes
          &lt;rules (blogSectionsRules)>
          An example
             Using the CSS setting, I &lt;a href="http://static.scripting.com/larryKing/images/2013/05/23/cssSettings.gif">added&lt;/a> this class:
-               .greenText &#123;
+               .greenText {
                   color: green !important;
                   }
             Then I set a &lt;a href="http://static.scripting.com/larryKing/images/2013/05/23/greentextatt.gif">cssTextClass attribute&lt;/a> on a headline to greenText. 
@@ -312,7 +312,7 @@ Small Picture worknotes
       Fargo 0.65 -- Icon Chooser + Save Button
          &lt;rules (blogSectionsRules)>
          Icon Chooser dialog
-            There's a new <i>Choose Icon</i> command in the Outliner menu. It brings up a dialog with several tabs. In each tab are 35 awesome icons. &lt;a href="http://static.scripting.com/larryKing/images/2013/05/20/chooseIconDialogScreen.gif">Screen shot&lt;/a>.
+            There's a new &lt;i>Choose Icon&lt;/i> command in the Outliner menu. It brings up a dialog with several tabs. In each tab are 35 awesome icons. &lt;a href="http://static.scripting.com/larryKing/images/2013/05/20/chooseIconDialogScreen.gif">Screen shot&lt;/a>.
             Click on one of the icons to set the icon of the bar cursor headline. 
             Click Close to dismiss the dialog without setting an icon. 
          Save Button
@@ -326,8 +326,8 @@ Small Picture worknotes
          &lt;rules (blogSectionsRules)>
          New commands
             There are two new commands in &lt;a href="http://fargo.io/">Fargo's&lt;/a> Outliner menu. 
-               &lt;b>Add Include&lt;/b> prompts for a URL and turns the bar cursor headline into an <i>include</i> node. The URL must point to an OPML file, though the command does not verify this. 
-               &lt;b>Add Feed&lt;/b> turns the bar cursor headline into a node of type <i>rss.</i> A collection of these nodes forms a standard OPML &lt;a href="http://dev.opml.org/spec2.html#subscriptionLists">subscription list&lt;/a>. The URL should point to a feed, in RSS or Atom formats. Again, no attempt is made by Fargo to verify the format of the file being pointed to.
+               &lt;b>Add Include&lt;/b> prompts for a URL and turns the bar cursor headline into an &lt;i>include&lt;/i> node. The URL must point to an OPML file, though the command does not verify this. 
+               &lt;b>Add Feed&lt;/b> turns the bar cursor headline into a node of type &lt;i>rss.&lt;/i> A collection of these nodes forms a standard OPML &lt;a href="http://dev.opml.org/spec2.html#subscriptionLists">subscription list&lt;/a>. The URL should point to a feed, in RSS or Atom formats. Again, no attempt is made by Fargo to verify the format of the file being pointed to.
          Clipboard
             The internal clipboard now remembers outline attributes. So when you copy within an outline, or between two outlines in different tabs, the attributes are now preserved.
          Troubleshooting link
@@ -337,7 +337,7 @@ Small Picture worknotes
          Icons can be added to any headline by going to Outliner > Edit Attributes and adding a new attribute named "icon" with the value being the name of the icon you'd like to use.  The name of the icon should be the name listed on the Font Awesome website without the "icon-" prefix.  So if you wanted to use the new fire extinguisher icon you would just enter in "fire-extinguisher" as the name.
          Kyle
       Fargo 0.62 -- Open by URL
-         One new command in this release, <i>Open by URL,</i> in the File menu in Fargo.
+         One new command in this release, &lt;i>Open by URL,&lt;/i> in the File menu in Fargo.
          It prompts for the address of an OPML file. The file opens in a new read-only tab. If the file changes, the tab display updates to reflect the change. It's like having a Reader tab inside Fargo. With this you can cook your own group of "Instant Outline" collaborators.
          You could, for example, watch the updates to the Small Picture users' directory, which is an &lt;a href="http://smallpicture.com/userDirectory.opml">OPML file&lt;/a>, using this command. 
          It's a deceptively small feature. It opens up a pretty large new set of applications for Fargo. :-)
@@ -347,7 +347,7 @@ Small Picture worknotes
          The idea is simple. Every outline can have a name. The name is much shorter and easier to remember than the URL assigned to it by Dropbox. 
          For example: &lt;a href="http://dave.smallpict.com/">dave.smallpict.com&lt;/a>. And when you want to view this outline in Fargo, you can leave off the domain and just ask it to open dave. When you do that you'll be viewing the public embodiment of me, the whole thing. 
          This is the stuff I want to show you. The private stuff doesn't get named. 
-         You can think of it as the outline equivalent of a website. But it's bigger than a website, because it can <i>contain</i> websites. That's part of a future step we're going to take, which is already pretty far along (in its third generation, btw).
+         You can think of it as the outline equivalent of a website. But it's bigger than a website, because it can &lt;i>contain&lt;/i> websites. That's part of a future step we're going to take, which is already pretty far along (in its third generation, btw).
          Those are the high-level ideas. I'll be writing more about that on my blog. Now to the practical.
          &lt;rules (blogSectionsRules)>
          Naming an outline
@@ -356,7 +356,7 @@ Small Picture worknotes
                2. The name you want to use is available.
                3. The name is 4 characters or more.
                4. It contains only alphabetic and numeric characters, or hyphens.
-            To give an outline a name, click on its tab and choose <i>Name outline</i> in the File menu. A dialog appears. &lt;a href="http://static.scripting.com/larryKing/images/2013/05/14/choosePublicName.gif">Screen shot&lt;/a>.
+            To give an outline a name, click on its tab and choose &lt;i>Name outline&lt;/i> in the File menu. A dialog appears. &lt;a href="http://static.scripting.com/larryKing/images/2013/05/14/choosePublicName.gif">Screen shot&lt;/a>.
             Enter a name. As you're typing, you're given an indication whether the name is available. 
             When you're ready click OK. Be sure this is the name you want to use because it can't be changed or deleted. 
          Be kind
@@ -431,7 +431,7 @@ Small Picture worknotes
          You can create new posts, edit them, organize collections of posts in the outliner, and use the outliner to author WordPress blog posts.
          &lt;a href="http://smallpicture.com/fargoDocs.html#wordpress">A new section&lt;/a> of Fargo Docs that walks you through the setup and creating and editing a post.
          &lt;a href="http://static.scripting.com/larryKing/images/2013/05/01/blogSettings.gif">Screen shot&lt;/a> of the Blog settings panel.
-         A homemade &lt;a href="http://www.youtube.com/watch?v=zCV9HJpeWWs&feature=youtu.be">video demo&lt;/a> showing how to write WordPress blog posts with the new version of Fargo. 
+         A homemade &lt;a href="http://www.youtube.com/watch?v=zCV9HJpeWWs&amp;feature=youtu.be">video demo&lt;/a> showing how to write WordPress blog posts with the new version of Fargo. 
          &lt;a href="http://fargo.io/blogUpdates.opml">An OPML file&lt;/a> with the most recent 100 new posts. The same data in a &lt;a href="http://recentposts.smallpicture.com/">web page&lt;/a>.
          Dave
       Fargo 0.53
@@ -450,7 +450,7 @@ Small Picture worknotes
             When you save a WordPress post the first time, the eye icon wouldn't display. Now it does. 
             Note: the WordPress feature is in testing. We expect to release it publicly in 0.54 or 0.55.
          Fixed cribsheet
-            There was a change at the top level of Fargo that set the margin-top of <i>.bs-docs-grid .row-fluid</i> to 50px. 
+            There was a change at the top level of Fargo that set the margin-top of &lt;i>.bs-docs-grid .row-fluid&lt;/i> to 50px. 
             This added a 50px margin to the cribsheet too. 
             I fixed it so that the change only applied to the top level grid, and the cribsheet looks good again. 
             Also verified that the tablet version works as well.
@@ -494,18 +494,18 @@ Small Picture worknotes
             The icon chain to the left of the outliner is now fixed when vertically scrolling.
          Tabs
             If there is an error loading an outline into a tab an error box will now display at the top of the outline describing the problem and offer the option to try again or close the tab.
-            If you ever run into a situation where no tabs are present, navigate to the <i>#prefs</i> folder within the Fargo folder on Dropbox and remove the file <i>tabs.json</i>.
+            If you ever run into a situation where no tabs are present, navigate to the &lt;i>#prefs&lt;/i> folder within the Fargo folder on Dropbox and remove the file &lt;i>tabs.json&lt;/i>.
          International characters
             When we save files to Dropbox, Dropbox attempts to detect the encoding (ASCII, Latin1, UTF-8) of the file.  Sometimes their encoding detection is incorrect.  This caused international characters to occasionally be encoded incorrectly when reading an outline back into Fargo.&lt;br>
             This release has a change in it to avoid that encoding problem.  Files are now read from Dropbox in a (binary) way that prevents the auto-detected encoding from being applied.  International characters should no longer be encoded incorrectly.
             Kyle
       Fargo 0.48 -- View in Reader
-         The big change in 0.48 is the introduction of <i>Small Picture Reader.</i> 
+         The big change in 0.48 is the introduction of &lt;i>Small Picture Reader.&lt;/i> 
          It's a separate app, in a web page, as with all our apps, that is used to read outlines, the same way Readability is used to read web pages. 
          &lt;rules (blogSectionsRules)>
          To use it 
             1. Prepare an outline in Fargo that you want to share.
-            2. When you're ready, choose <i>View in Reader</i> in the File menu. 
+            2. When you're ready, choose &lt;i>View in Reader&lt;/i> in the File menu. 
             3. Reader should open, with your outline displayed.
             4. You can then send the URL of that page to friends or colleagues, or use the Tweet icon in the left margin to send it to your Twitter followers.
          Tips for readers
@@ -580,14 +580,14 @@ Small Picture worknotes
             2. You'll see a checkbox that enables the plug-in demo. Check it and click submit. 
             3. Choose Import OPML from the Outliner menu. Enter this URL into the dialog.
             https://dl.dropbox.com/u/36518280/outlines/hazelnut.opml
-            4. Now place the cursor on the top-level headline, <i>My presentation,</i> and click the new icon (&lt;a href="http://static.scripting.com/larryKing/images/2013/03/31/screen1.gif">screen shot&lt;/a>). 
+            4. Now place the cursor on the top-level headline, &lt;i>My presentation,&lt;/i> and click the new icon (&lt;a href="http://static.scripting.com/larryKing/images/2013/03/31/screen1.gif">screen shot&lt;/a>). 
             5. In a few seconds a preview of a presentation should appear. Step through it by clicking on the &lt;a href="http://static.scripting.com/larryKing/images/2013/03/31/screen2.gif">arrows&lt;/a> in the lower right corner of the window. 
          Editing
             You can edit my slides or create your own. 
             The top level headline is the title of the show. Its subheads are the titles of slides. And the text under each slide are the bullet points. 
          Publishing
             You can create a finished presentation that you can send to others by clicking the Publish button in the lower left corner of the Preview dialog. 
-            <i>Note that since this is just a demo, all published presentations will be automatically deleted one month after they are published. So if you want to keep a copy you should download it before the month is over.</i>
+            &lt;i>Note that since this is just a demo, all published presentations will be automatically deleted one month after they are published. So if you want to keep a copy you should download it before the month is over.&lt;/i>
          The idea
             This part is for developers.
             When the user clicks the icon, a dialog opens, and calls a web service. It returns HTML code that is displayed in the dialog.
@@ -618,7 +618,7 @@ Small Picture worknotes
          &lt;rules (blogSectionsRules)>
          Download OPML 
             New experimental command.
-            It should work in all browsers, <i>except IE9 and IE10. </i>
+            It should work in all browsers, &lt;i>except IE9 and IE10. &lt;/i>
             Thanks to Dan MacTough for this excellent hack.
          Don't save if it's been one or more seconds since the last keystroke
             The user has to let up a little before we save.

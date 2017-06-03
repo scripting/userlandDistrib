@@ -35,8 +35,8 @@ needed on a new product.
        Technical sheets
        Overview materials
        Tutorial materials
-   Sales Support & Training
-   Early Customers & Vendors
+   Sales Support &amp; Training
+   Early Customers &amp; Vendors
    Estimated Introduction Expenses
 
 </pre>

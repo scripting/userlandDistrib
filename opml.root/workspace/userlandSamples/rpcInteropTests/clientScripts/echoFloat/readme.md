@@ -5,7 +5,7 @@ on echoFloat (server, port, protocol)
    local (denominator = random (1, 1000))
    local (aFloat = double (numerator) / denominator)
    
-   local (result, params = &#123;"inputFloat":aFloat})
+   local (result, params = {"inputFloat":aFloat})
    result = xml.rpc (server, port, "interopEchoTests.echoFloat", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    if not workspace.userlandSamples.rpcInteropTests.floatNearlyEqual (result, aFloat)

@@ -6,6 +6,6 @@
       //http://www.ietf.org/rfc/rfc4627.txt
       //http://labs.adobe.com/technologies/spry/samples/data_region/JSONDataSetSample.html
       //http://www.json.org/example.html
-      //http://api.hunch.com/api/v1/get-recommendations/?topic_ids=all_544&limit=10&auth_basic=1
+      //http://api.hunch.com/api/v1/get-recommendations/?topic_ids=all_544&amp;limit=10&amp;auth_basic=1
 
 </pre>

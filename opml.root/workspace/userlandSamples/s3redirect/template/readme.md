@@ -2,7 +2,7 @@
 <pre>
 &lt;html>
    &lt;head>
-      &lt;meta http-equiv="refresh" content="0;URL='<%url%>'">
+      &lt;meta http-equiv="refresh" content="0;URL='&lt;%url%>'">
       &lt;/head>
    &lt;body>
       &lt;/body>

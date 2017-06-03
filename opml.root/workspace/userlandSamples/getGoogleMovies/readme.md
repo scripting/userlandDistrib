@@ -8,7 +8,7 @@ on getGoogleMovies (zip, adrmoviestable)
    local (xmltext, xstruct, i = 0, adrreply, adrmovies, adrmovie, fldone = false, url)
    new (tabletype, adrmoviestable)
    while not fldone
-      url = "http://www.google.com/ig/api?movies=" + zip + "&start=" + 3 * i++
+      url = "http://www.google.com/ig/api?movies=" + zip + "&amp;start=" + 3 * i++
       xmltext = tcp.httpreadurl (url, 3, false)
       msg (url)
       xml.compile (xmltext, @xstruct)

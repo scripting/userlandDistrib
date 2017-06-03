@@ -2,10 +2,10 @@
 <pre>
 Marketing Research Plan Template
    Objective
-1.  Establish a case for proceeding with an R&D investigation.	
+1.  Establish a case for proceeding with an R&amp;D investigation.	
    
 2.  Scope out the business opportunities and risks involved with continuance 
-of an R&D investigation. 
+of an R&amp;D investigation. 
    Executive Summary
    Customer Scenarios
     Application of the product

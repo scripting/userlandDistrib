@@ -22,7 +22,7 @@ Job Specifications Template
     Bonus plan: 
     Forecast: 
     Supervisor: 
-    Budget & Expenses: 
+    Budget &amp; Expenses: 
     Computer equipment required: 
     Office equipment: 
     Person Hired: 

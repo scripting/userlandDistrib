@@ -24,7 +24,7 @@ on parser ()
          break
       popuntil ("\"")
       num = popuntil ("\r") - "\\" - "\"" - "\r"
-      num = "&#x" + num
+      num = "&amp;#x" + num
       adrsub = xml.addtable (adricons, "icon")
       xml.addvalue (adrsub, "num", num)
       xml.addvalue (adrsub, "name", name)
@@ -40,7 +40,7 @@ on parser ()
       //value = string.nthfield (op.getlinetext (), ":", 2)
       //value = value - "\\" - " "
       //value = string.replaceall (value, '"', "")
-      //value = "&#x" + value
+      //value = "&amp;#x" + value
       //op.go (left, 1)
       //adrsub = xml.addtable (adricons, "icon")
       //xml.addvalue (adrsub, "num", value)

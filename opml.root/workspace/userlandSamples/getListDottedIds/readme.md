@@ -8,7 +8,7 @@ local (domain, ip)
 op.go (up, infinity)
 loop
    domain = op.getlinetext ()
-   try &#123;delete (@system.temp.reverseIpCache.[domain])}
+   try {delete (@system.temp.reverseIpCache.[domain])}
    ip = tcp.dns.getdottedid (domain)
    if op.countsubs (1) == 1
       op.expand (1)

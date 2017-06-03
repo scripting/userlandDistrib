@@ -326,7 +326,7 @@ Area Codes and Time Zones, United States and Canada
        St. Kitts
        St. Lucia
        St. Vincent
-       Trinidad & Tobago
+       Trinidad &amp; Tobago
        Union Island
        Virgin Islands
    812

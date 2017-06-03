@@ -1,7 +1,7 @@
 ### workspace.userlandSamples.rpcInteropTests.clientScripts.echoStringArray
 <pre>
 on echoStringArray (server, port, protocol)
-   local (aStringArray = &#123;})
+   local (aStringArray = {})
    bundle //generate the array
       local (i)
       for i = 1 to 3
@@ -9,7 +9,7 @@ on echoStringArray (server, port, protocol)
          local (aString = states.nthState (n))
          aStringArray = aStringArray + aString
    
-   local (result, params = &#123;"inputStringArray":aStringArray})
+   local (result, params = {"inputStringArray":aStringArray})
    result = xml.rpc (server, port, "interopEchoTests.echoStringArray", @params, protocol:protocol, soapAction:"/interopEchoTests")
    
    if typeOf (result) != listType

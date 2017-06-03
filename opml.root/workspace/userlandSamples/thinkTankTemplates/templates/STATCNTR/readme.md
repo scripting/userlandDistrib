@@ -86,7 +86,7 @@ Personal Status Center Template
        06:00pm: 
        07:00pm: 
        08:00pm: 
-   Notes & Memos
+   Notes &amp; Memos
    Miscellaneous
    Projects
    To Do List

@@ -118,7 +118,7 @@ bundle //convert homepages to weblog items
       else //post the outline as a single story rendered with the pikeRenderer
          local (s)
          local (pageTable, oldPta); new (tableType, @pageTable)
-         try &#123;oldPta = html.getPageTableAddress ()}
+         try {oldPta = html.getPageTableAddress ()}
          html.setPageTableAddress (@pageTable)
          s = pikeRenderer (@theOutline)
          html.deletePageTableAddress ()

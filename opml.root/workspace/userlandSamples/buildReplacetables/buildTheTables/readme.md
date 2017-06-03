@@ -9,7 +9,7 @@ on buildTheTables ()
       local (i)
       new (tabletype, adrtable)
       for i = 128 to 255
-         adrtable^.[char (i)] = "&#" + i + ";"
+         adrtable^.[char (i)] = "&amp;#" + i + ";"
    //bundle //add entities for symbols and Greek letters
       //http://htmlhelp.com/reference/html40/entities/symbols.html
       //local (s = string (workspace.buildnewreplacetable.w3ctext), xstruct)

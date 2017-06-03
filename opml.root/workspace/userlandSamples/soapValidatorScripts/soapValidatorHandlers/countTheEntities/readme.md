@@ -14,7 +14,7 @@ on countTheEntities (s)
             struct.ctLeftAngleBrackets++
          '>'
             struct.ctRightAngleBrackets++
-         '&'
+         '&amp;'
             struct.ctAmpersands++
          '\''
             struct.ctApostrophes++
@@ -33,7 +33,7 @@ bundle //test code
             s [random (1, sizeof (s))] = ch
       addentity ('&lt;')
       addentity ('>')
-      addentity ('&')
+      addentity ('&amp;')
       addentity ('\'')
       addentity ("'")
    scratchpad.entities = countTheEntities (s)

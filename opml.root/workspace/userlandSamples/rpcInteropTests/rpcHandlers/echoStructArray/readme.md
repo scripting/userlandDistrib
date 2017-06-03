@@ -8,7 +8,7 @@ on echoStructArray (inputStructArray)
          adrRequest^.customNamespaceURI = "http://www.xmethods.com/service"
    if typeOf (inputStructArray) != listType and typeOf (inputStructArray) != tableType
       scriptError ("Can't process the request because the input parameter was not an array of structs.")
-   local (returnArray = &#123;})
+   local (returnArray = {})
    for i = 1 to sizeOf (inputStructArray)
       if typeOf (inputStructArray[i]) != tableType
          scriptError ("Can't process the request because element " + i + " (1-based) is not a struct.")
