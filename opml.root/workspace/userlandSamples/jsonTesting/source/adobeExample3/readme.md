@@ -1,2 +1,4 @@
-### workspace.userlandSamples.jsonTesting.source.adobeExample3
-{	"color": "red",	"value": "#f00"}
+### 
+<pre>
+workspace.userlandSamples.jsonTesting.source.adobeExample3
+</pre>{	"color": "red",	"value": "#f00"}
