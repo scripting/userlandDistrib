@@ -1,4 +1,3 @@
-### 
-<pre>
-workspace.userlandSamples.jsonTesting.source.adobeExample1Variant2
-</pre>[12]
+### workspace.userlandSamples.jsonTesting.source.adobeExample1Variant2
+<pre>[12]
+</pre>
